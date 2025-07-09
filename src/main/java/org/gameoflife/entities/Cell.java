@@ -7,7 +7,7 @@ public class Cell {
     Integer y;
     Boolean currentAlive;
     Boolean nextAlive;
-    List<Cell> neighbours;
+    List<Cell> neighbors;
 
     public Cell(Integer x, Integer y, Boolean currentAlive) {
         this.x = x;
@@ -48,11 +48,13 @@ public class Cell {
         this.nextAlive = nextAlive;
     }
 
-    public List<Cell> getNeighbours() {
-        return neighbours;
+    public List<Cell> getNeighbors() {
+        return neighbors;
     }
 
-    public void setNeighbours(List<Cell> neighbours) {
-        this.neighbours = neighbours;
+
+
+    public void setNeighbors(List<Cell> neighbors) {
+        this.neighbors = neighbors;
     }
 }

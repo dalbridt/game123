@@ -59,6 +59,10 @@ public class GameService {
     }
 
     void setNeighborsforAllCells() {
+        gameField.getListOfCells().stream().forEach(cell -> {
+            List <Cell> neighbors = getNeighborsForCell(cell.getX(), cell.getY());
+            cell.setNeighbors(neighbors);
+                });
         // todo - самое важное!!!!
     }
 
@@ -77,7 +81,6 @@ public class GameService {
                 if (j < 0 || j >= gameField.getHeight()) {
                     continue;
                 }
-
                 neighbors.add(gameField.getCell(i, j));
             }
         }
