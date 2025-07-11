@@ -33,16 +33,6 @@ public class GameField {
         return null;
     }
 
-    public Integer getWidth() {
-        return width;
-    }
-
-
-    public Integer getHeight() {
-        return height;
-    }
-
-
     @Override
     public String toString() {
         return IntStream.range(0, height)

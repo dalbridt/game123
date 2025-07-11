@@ -1,6 +1,6 @@
 package org.gameoflife.newpack;
 
-import org.gameoflife.GameField;
+import org.gameoflife.Board;
 
 public class Create {
     public static CellBuilder cell(int x, int y) {
@@ -8,6 +8,7 @@ public class Create {
         return cellBuilder;
     }
 
-    public static GameField gameField(int height, int width) {
+    public static Board board(int height, int width) {
     }
+
 }
